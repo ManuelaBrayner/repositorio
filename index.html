@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Portfólio – Manuela Brayner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <p class="logo">MB</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="ativo">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="certificados.html">Certificados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn-tema" title="Alternar tema">🌙</button>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-texto">
+        <h1>Olá, eu sou <span class="destaque">Manu!</span> 👋</h1>
+        <p class="subtitulo">
+          Estudante de Ciência da Computação apaixonada por tecnologia,
+          dando os primeiros passos no mundo do desenvolvimento web.
+        </p>
+        <div class="hero-botoes">
+          <a href="projetos.html" class="botao botao-cheio">Ver meus projetos</a>
+          <a href="contato.html" class="botao botao-vazio">Falar comigo</a>
+        </div>
+      </div>
+
+      <div class="hero-foto">
+        <div class="foto-placeholder">
+          <img src="https://i.postimg.cc/7ZgcBTTp/fotodeperfil.jpg" class="foto-perfil" style="width:260px; height:260px; border-radius:50%; border:3px solid #3c7f47aa; object-fit:cover; object-position:center 50%;" alt="Minha foto de perfil">
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2 class="titulo-secao">Sobre mim</h2>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <p>
+            Olá! Me chamo <strong>Manuela Brayner</strong> e sou estudante do primeiro período
+            de <strong>Ciência da Computação</strong> na <strong>CESAR School</strong>.
+            Inspirada pela minha mãe, decidi trilhar meu caminho na tecnologia. 
+            Cresci ouvindo seus relatos sobre os desafios de ser mulher na área 
+            de TI e, assim como ela, quero vencer essas barreiras e fazer a diferença no setor. 
+            Além disso, escolhi essa profissão pela liberdade: a tecnologia me permite trabalhar 
+            de qualquer lugar, unindo a paixão pelo meu trabalho ao sonho de viajar e explorar o mundo.
+          </p>
+          <p>
+            Estou aprendendo HTML, CSS, JavaScript, C++ e Python nas aulas, e esse portfólio
+            é meu primeiro projeto real! Ainda estou no começo, mas já
+            estou animada com o que consigo criar.
+          </p>
+          <p>
+            Fora do computador, gosto de ouvir música, tocar violão, cozinhar e maratonar filmes e séries!
+          </p>
+        </div>
+
+        <div class="sobre-info">
+          <ul class="lista-info">
+            <li>
+              <span class="icone">📍</span>
+              <span><strong>Cidade:</strong> Recife, PE</span>
+            </li>
+            <li>
+              <span class="icone">🎓</span>
+              <span><strong>Curso:</strong> Ciência da Computação – CESAR School</span>
+            </li>
+            <li>
+              <span class="icone">📅</span>
+              <span><strong>Período:</strong> 1º período (2026)</span>
+            </li>
+            <li>
+              <span class="icone">💻</span>
+              <span>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/ManuelaBrayner" target="_blank">github.com/ManuelaBrayner</a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+      <h2 class="titulo-secao">O que estou aprendendo</h2>
+      <p class="descricao-secao">Essas são as tecnologias que estou estudando no momento:</p>
+      <div class="grade-habilidades">
+        <div class="card-hab">
+          <p class="nome-hab">Python</p>
+        
+        </div>
+        <div class="card-hab">
+          <p class="nome-hab">HTML</p>
+          
+        </div>
+        <div class="card-hab">
+          <p class="nome-hab">JavaScript</p>
+          
+        </div>
+        <div class="card-hab">
+          <p class="nome-hab">CSS</p>
+          
+        </div>
+        <div class="card-hab">
+          <p class="nome-hab">C++</p>
+          
+        </div>
+      </div>
+    </section>
+     
+    <section class="projetos-preview" id="projetos">
+      <div class="preview-cabecalho">
+        <h2 class="titulo-secao">Meus projetos</h2>
+        <a href="projetos.html" class="link-todos">Ver todos →</a>
+      </div>
+
+      <div class="grade-projetos">
+        <article class="card-projeto">
+          <div class="card-topo" style="background-color:#3c7f47aa;">
+            <span class="emoji-projeto">🌋</span>
+          </div>
+          <div class="card-corpo">
+            <h3>Fuga Vulcânica</h3>
+            <p>Jogo de tabuleiro desenvolvido em grupo para pessoas com TEA (Transtorno do Espectro Autista)</p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Arduíno</span>
+            </div>
+            <div class="card-links">
+              <a href="projeto-detalhes.html">Ver Detalhes →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="rodape">
+    <p>Feito por <strong>Manuela Brayner</strong> — 2026</p>
+    <div class="rodape-links">
+      <a href="https://github.com/ManuelaBrayner" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/manuelabraynermedeirosdearaujo" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

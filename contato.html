@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Contato – Manuela Brayner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <p class="logo">MB</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="certificados.html">Certificados</a></li>
+        <li><a href="contato.html" class="ativo">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn-tema" title="Alternar tema">🌙</button>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="topo-pagina">
+      <h1 class="titulo-pagina">Fale <span class="destaque">Comigo</span></h1>
+      <p>Tem alguma dúvida, sugestão ou oportunidade? Me manda uma mensagem! 😊</p>
+    </section>
+
+    <section class="contato-pagina">
+      <div class="contato-grade">
+        <div class="contato-info">
+          <h2>Onde me encontrar</h2>
+          <p>
+            Estou sempre aberta a conversar sobre tecnologia,
+            projetos acadêmicos ou oportunidades de estágio.
+            Responderei sempre que possível! 
+          </p>
+
+          <ul class="lista-contato">
+            <li>
+              <span class="icone-contato">📧</span>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:manubrayner2008@gmail.com">manubrayner2008@gmail.com</a>
+              </div>
+            </li>
+            <li>
+              <span class="icone-contato">💼</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/manuelabraynermedeirosdearaujo" target="_blank">
+                  linkedin.com/in/manuelabraynermedeirosdearaujo
+                </a>
+              </div>
+            </li>
+            <li>
+              <span class="icone-contato">🐙</span>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/ManuelaBrayner" target="_blank">github.com/ManuelaBrayner</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contato-formulario">
+          <form id="formulario-contato" method="POST" action="https://formspree.io/f/mrevprpk">
+            <div class="campo">
+              <label for="nome">Seu nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Como você se chama?" required >
+            </div>
+
+            <div class="campo">
+              <label for="email">Seu e-mail</label>
+              <input type="email" id="email" name="email" placeholder="seuemail@email.com" required >
+            </div>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Escolha um assunto...</option>
+                <option value="estagio">Oportunidade de estágio</option>
+                <option value="colaboracao">Colaboração em projeto</option>
+                <option value="duvida">Dúvida sobre meu trabalho</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            </div>
+
+            <button type="submit" class="botao botao-cheio">Enviar mensagem ✉️</button>
+            <p class="aviso-formulario" id="aviso-formulario"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por <strong>Manuela Brayner</strong> — 2026</p>
+    <div class="rodape-links">
+      <a href="https://github.com/ManuelaBrayner" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/manuelabraynermedeirosdearaujo" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

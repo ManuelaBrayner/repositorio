@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Projetos – Manuela Brayner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+  
+  <header class="cabecalho">
+    <p class="logo">MB</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html" class="ativo">Projetos</a></li>
+        <li><a href="certificados.html">Certificados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn-tema" title="Alternar tema">🌙</button>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="topo-pagina">
+      <h1 class="titulo-pagina">Meus <span class="destaque">Projetos</span></h1>
+      <p>
+        Aqui estão os trabalhos que desenvolvi durante o curso.
+        Ainda são projetos simples, mas representam muito aprendizado!
+      </p>
+    </section>
+
+    <div class="projetos-pagina">
+      <div class="grade-projetos" id="lista-projetos">
+        <article class="card-projeto" data-categoria="html-css">
+          <div class="card-topo" style="background-color: #90b68c;">
+            <span class="emoji-projeto">🌋</span>
+          </div>
+          <div class="card-corpo">
+            <h2>Fuga Vulcânica</h2>
+            <p>
+              Jogo de tabuleiro desenvolvido com Arduino para pessoas com TEA (Transtorno do Espectro Autista)
+            </p>
+            <div class="tags">
+              <span class="tag">C++</span>
+              <span class="tag">Arduíno</span>
+            </div>
+            <div class="card-links">
+              <a href="projeto-detalhes.html">Ver Detalhes →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="msg-vazia" id="msg-vazia" style="display:none;">
+        Nenhum projeto nessa categoria ainda. Em breve! 🚀
+      </p>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por <strong>Manuela Brayner</strong> — 2026</p>
+    <div class="rodape-links">
+      <a href="https://github.com/ManuelaBrayner" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/manuelabraynermedeirosdearaujo" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <title>Fuga Vulcânica – Detalhes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" >
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+
+<body>
+
+  <header class="cabecalho">
+    <p class="logo">MB</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html" class="ativo">Projetos</a></li>
+        <li><a href="certificados.html">Certificados</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="btn-tema" class="btn-tema" title="Alternar tema">🌙</button>
+    <button class="btn-menu" onclick="abrirMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="topo-pagina">
+      <h1 class="titulo-pagina">Fuga <span class="destaque">Vulcânica</span></h1>
+      <p>Entenda os bastidores e objetivos desse projeto inclusivo.</p>
+    </section>
+
+    <section class="sobre" style="padding-top: 1rem;">
+      <div class="sobre-conteudo" style="grid-template-columns: 1.4fr 1fr;">
+        <div class="sobre-texto">
+          <h2 class="titulo-secao">Sobre o Projeto</h2>
+          <p>
+            O <strong>Fuga Vulcânica</strong> é um jogo de tabuleiro físico integrado com tecnologia computacional 
+            através do ecossistema <strong>Arduino</strong>. Ele foi inteiramente projetado em grupo com o objetivo inclusivo 
+            focado no suporte a indivíduos com <strong>Transtorno do Espectro Autista (TEA)</strong>.
+          </p>
+          <p>
+            O jogo estimula o raciocínio lógico, a interação social estruturada e o gerenciamento de estímulos sensoriais, 
+            utilizando feedback visual balanceado para engajar o jogador sem causar sobrecarga cognitiva.
+          </p>
+          
+          <h3 style="margin: 1.5rem 0 0.5rem; font-weight:700;">Principais Aprendizados:</h3>
+          <p>
+            • Lógica de programação de sistemas embarcados usando <strong>C++</strong>.<br>
+            • Integração prática de hardware com sensores e atuadores físicos.<br>
+            • Desenvolvimento focado em acessibilidade e Design Centrado no Usuário (UX).
+          </p>
+        </div>
+
+        <div class="sobre-info">
+          <ul class="lista-info">
+            <li>
+              <span class="icone">⚙️</span>
+              <span><strong>Tecnologias:</strong> C++, Arduino, Eletrônica</span>
+            </li>
+            <li>
+              <span class="icone">👥</span>
+              <span><strong>Formato:</strong> Trabalho Acadêmico em Grupo</span>
+            </li>
+            <li>
+              <span class="icone">🎯</span>
+              <span><strong>Foco Social:</strong> Acessibilidade / TEA</span>
+            </li>
+            <li>
+              <span class="icone">🏫</span>
+              <span><strong>Instituição:</strong> CESAR School (1º Período)</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1.5rem; text-align: center;">
+            <a href="projetos.html" class="botao botao-vazio" style="width: 100%;">← Voltar para Projetos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Feito por <strong>Manuela Brayner</strong> — 2026</p>
+    <div class="rodape-links">
+      <a href="https://github.com/ManuelaBrayner" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/manuelabraynermedeirosdearaujo" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
